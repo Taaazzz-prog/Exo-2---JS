@@ -12,3 +12,5 @@ function saluerLuka(input) {
   
   // Exemple d'utilisation
   saluerLuka('Y M C A'); // Affichera "Bonjour Luka"
+
+  //test nul
