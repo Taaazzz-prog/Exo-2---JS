@@ -1,3 +1,5 @@
+//Travaux sur les console.log() et le début des boucles
+
 //Le consol.log est une fonction qui permet d'afficher les résultats de nos modifications je ne l'expliquerais pas forcément toujours
 
 //On créé une vriable au nom de tableau
