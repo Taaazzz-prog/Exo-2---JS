@@ -3,6 +3,7 @@
 
 /*
 Methode
+-------
 
 - Étapes 1 : Créé un tableau vide
 - Étapes 2 : Parcourir chaque éléments du premier tableau
