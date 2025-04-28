@@ -178,3 +178,4 @@ for (let i = 0; i < tableau.length; i++) {
 }
 console.log("La somme est de " + somme);
 
+//z
