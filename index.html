@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Jeu du Pendu</title>
+</head>
+<body>
+<h1>Jeu du Pendu</h1>
+<p id="mot"></p>
+<p>Entrez une lettre : <input type="text" id="lettre" maxlength="1" />
+<button onclick="deviner()">Deviner</button></p>
+<p id="message"></p>
+<p>Tentatives restantes : <span id="tentatives">6</span></p>
+
+<script>
+const motSecret = "lycanthropie"; // Mot à deviner
+let motAffiche = Array(motSecret.length).fill('_');
+let tentativesRestantes = 6;
+
+function afficherMot() {
+    document.getElementById('mot').textContent = motAffiche.join(' ');
+}
+
+function deviner() {
+    const input = document.getElementById('lettre');
+    const lettre = input.value.toLowerCase();
+    input.value = '';
+
+    if (!lettre || lettre.length !== 1 || !/[a-z]/.test(lettre)) {
+        alert('Veuillez entrer une seule lettre valide.');
+        return;
+    }
+
+    let trouve = false;
+    for (let i = 0; i < motSecret.length; i++) {
+        if (motSecret[i] === lettre && motAffiche[i] === '_') {
+            motAffiche[i] = lettre;
+            trouve = true;
+        }
+    }
+
+    if (!trouve) {
+        tentativesRestantes--;
+        document.getElementById('tentatives').textContent = tentativesRestantes;
+    }
+
+    afficherMot();
+
+    if (motAffiche.join('') === motSecret) {
+        document.getElementById('message').textContent = 'Félicitations, vous avez gagné !';
+    } else if (tentativesRestantes === 0) {
+        document.getElementById('message').textContent = 'Perdu ! Le mot était : ' + motSecret;
+    }
+}
+
+afficherMot();
+</script>
+</body>
+</html>
