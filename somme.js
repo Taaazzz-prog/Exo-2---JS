@@ -28,3 +28,4 @@ let NewTabFiltrer = filtrePairs([1, 2, 3, 4, 5, 6])
 
 console.log(NewTabFiltrer); // Affiche : [2, 4, 6]
 
+//E
