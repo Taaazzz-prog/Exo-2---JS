@@ -23,3 +23,4 @@ function premierDoublon(tab) {
 // }
  console.log(premierDoublon([1, 3, 4, 3, 2, 1])); // Résultat attendu : 1
  console.log(premierDoublon([1, 2, 3, 4])); // Résultat attendu : null
+//TEST
