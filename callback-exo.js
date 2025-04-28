@@ -123,4 +123,3 @@ traiterLivres(livre => {
 //Appelle traiterLivres() en lui passant afficherLivres comme callback
 
 //traiterLivres(afficherLivres);
-
