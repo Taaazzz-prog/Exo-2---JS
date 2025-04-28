@@ -53,3 +53,4 @@ function eliminerDoublons(tab) {
     return newTab;
 }
 console.log(eliminerDoublons([1, 2, 2, 3, 4, 4])); // Affiche : [1, 2, 3, 4]
+
