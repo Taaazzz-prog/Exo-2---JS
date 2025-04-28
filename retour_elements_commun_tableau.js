@@ -16,6 +16,7 @@ Methode
 9) On va retourner le tableau contenant les éléments communs
 10) On va tester la fonction avec deux tableaux contenant des doublons
 11) On va afficher le tableau contenant les éléments communs
+
 */
 
 
