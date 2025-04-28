@@ -1,3 +1,58 @@
+//Cree une fonction recursive qui va afficher les nombres de 1 à 10
+function afficherNombresRecursif(n) {
+    if (n > 10) {
+        return;
+    }
+    console.log(n);
+    afficherNombresRecursif(n + 1);
+}
+//Appel la fonction afficherNombresRecursif avec 1
+//afficherNombresRecursif(1)
+
+//cree fonction recursive qui va appeler pour manger et si pas reponse faire un decompte avant de crier a table
+function crierATable(decompte) {
+    if (decompte > 0) {
+        console.log(decompte);
+        setTimeout(() => crierATable(decompte - 1), 1000);
+    } else {
+        console.log("A table !");
+    }
+}
+//Appel la fonction crierATable avec 5
+crierATable(5)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //On va faire des exercices sur la recursivité
 
 const dossier ={
