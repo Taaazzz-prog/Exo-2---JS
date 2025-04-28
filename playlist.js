@@ -1,3 +1,5 @@
+// Travail sur une liste de playsliste avec fonction plop() et push()
+
 //on cree une variable avec un titre de musique
 let titre = "morceau moi 1"
 let titre2 = "morceau moi 2"
