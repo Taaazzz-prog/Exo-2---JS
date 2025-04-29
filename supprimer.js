@@ -126,14 +126,14 @@ let user = findUserById(users, 5);
 // Exercices 3
 
 /*                                             #############################################
-                                               # Plusieurs façons de créer la fonction slice #
+                                               # Plusieurs façons de créer la fonction splice #
                                                #############################################
 */
 
 // Première méthode : création d'une fonction personnalisée similaire à Array.slice()
 
 // Fonction cda_slice() qui retourne une sous-liste du tableau entre start (inclus) et end (non inclus)
-function cda_slice(tab, start, end) {
+function cda_slice(tab, start, end) {yourDatabaseName
     let newTab = []; // Création d'un nouveau tableau pour stocker la sous-liste
 
     // Vérification des arguments pour s'assurer qu'ils sont valides
