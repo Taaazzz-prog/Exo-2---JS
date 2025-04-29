@@ -1,4 +1,5 @@
 // Définition d'un tableau d'objets représentant des personnes avec leur nom
+
 var tabs = [
     { name: "Jean" },
     { name: "Luc" },
