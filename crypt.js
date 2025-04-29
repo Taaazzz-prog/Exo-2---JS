@@ -10,6 +10,9 @@
 
 
 // Importation de la bibliothèque bcrypt
+//moi je l'appel bcryptjs, c'est avec une autre methode que je l'ai installé sur mon linux l'installation de base ne fonctionnait pas
+//Le pc du boulot est un peu pourri lol
+
 const bcrypt = require('bcryptjs'); 
 
 // La phrase 'Mettre votre mot de passe ici' est le mot de passe par défaut si aucun n'est fourni dans l'environnement
