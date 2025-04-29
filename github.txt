@@ -1,0 +1,107 @@
+**Principales commandes git/Github**
+=============================
+
+**Utilisation basique
+----------------------
+### Création de dépôt
+>* mkdir nomduprojet
+
+ Pour créer le document
+>* cd nomduprojet
+
+ Pour ouvrir le document
+>* git init
+
+ Il sera alors créé dans le dossier nomduprojet un dossier.git où sera stockées les différentes révisions ou informations du projet.
+
+### Récupération de dépôt
+Dans le cas où on veut récupérer un dépôt, il faut faire les commandes suivantes:
+
+>* git clone git:// dépôt
+
+
+ 
+ou
+>* git clone https::// dépôt
+
+### Comparaison de deux versions
+>* git diff
+
+>* git  diff commit1 commit2
+
+pour comparer deux versions de commit
+>* git status
+
+Pour savoir tout ce qui n'a été pas validé
+
+>* git log  
+
+Liste  les commits effectués dans le dépôt
+
+###Gestion des fichiers
+>* git add nomdufichier ou get add nomdudossier
+
+Pour indiquer le fichier ou le dossier qui devra être versionné
+>* git add*
+
+Pour ajouter tout le contenu du dossier
+>* git rm nomdufichier
+
+Permet de supprimer le fichier de l'ordinateur et du dépôt Git
+>* git mv nomdufichier nouvelledestination
+
+permet de déplacer le fichier
+
+
+###Gestion des commits
+>* git pull
+
+permet la mise à jour du dépôt local
+
+**ATTENTION**:A faire avant de commencer par modifier des fichiers
+
+>* git commit fichier1 fichier2 
+
+crée un commit contenat fichier1 et fichier2
+>* git commit -a : 
+
+Crée un nouveau commit contenant tous les changements effectués sur les fichiers
+>* git push origin master
+
+envoie le commit dans la branche principale du dossier
+
+##**Utilisation avancée
+###Gestion des branches
+>* git branch nomdelabranche
+
+permet de créer une nouvelle branche
+>* git branch
+
+Liste toutes les branches créées dans le dépôt
+>* git checkout nomdelabranche
+
+permet de changer de branche
+>* git merge nomdelabranche
+
+fusionne la branche courante avec la branche nommée nomdelabranche
+>* git reset -hard HEAD
+
+permet d'abandonner la fusion
+>* git branch -d nomdelabranche
+
+permet de supprimer la branche
+>*git push origin branch 
+
+pour envoyer la branche vers le dépôt distant
+
+
+###**Autres commandes
+>* git config color.ui true
+
+pour utiliser des couleurs à la sortie du git
+>* git config format.pretty oneline
+
+Affiche le journal sur une seule ligne pour chaque validation
+>* git add -i
+
+Pour utiliser l'ajout interactif
