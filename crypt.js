@@ -5,6 +5,9 @@
 
 //Penser à d'abord télécharger la bibliortheque bcrypt pour linux
 
+//Je vous invite à allez voir ce lien ci pour vous documenter plus et pour l'installer
+//https://laconsole.dev/blog/hacher-mot-de-passe-js-bcrypt
+
 
 // Importation de la bibliothèque bcrypt
 const bcrypt = require('bcryptjs'); 
