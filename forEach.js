@@ -15,10 +15,10 @@ Ensuite, avec
 
 */
 
-const chiffres = [4, 5, 2, 8, 10, 12];
+const chiffres1 = [4, 5, 2, 8, 10, 12];
 let somme = 0;
 
-chiffres.forEach((nombre) => {
+chiffres1.forEach((nombre) => {
   somme += nombre;
 });
 
