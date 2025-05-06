@@ -10,7 +10,7 @@ function inverserMot(mot) {
 }
 
 // On appelle la fonction pour inverser le mot "JavaScript"
-console.log(inverserMot("JavaScript")); // Affiche "tpircSavaJ"
+//console.log(inverserMot("JavaScript")); // Affiche "tpircSavaJ"
 
 
 //on va cree la meme fonction mais avec des boucles et des conditions
@@ -23,4 +23,25 @@ function inverserMotBoucle(mot) {
     return motInverse; // Retourne le mot inversé
 }
 // On appelle la fonction pour inverser le mot "JavaScript"
-console.log(inverserMotBoucle("JavaScript")); // Affiche "tpircSavaJ"
+//console.log(inverserMotBoucle("JavaScript")); // Affiche "tpircSavaJ"
+
+
+
+
+//on va cree unefonction recursive avec boucle et condition pour inverser les lettres d'un mot
+
+function inverserMotRecursifBoucle(mot) {
+    // Si le mot est vide ou a une seule lettre, on le retourne tel quel
+    if (mot.length <= 1) {
+        return mot;
+    }
+    // On initialise une variable pour stocker le mot inversé
+    let motInverse = ""; 
+    // On boucle à travers chaque lettre du mot
+    for (let i = mot.length - 1; i >= 0; i--) {
+        motInverse += mot[i]; // Ajoute chaque lettre à la variable motInverse
+    }
+    return motInverse; // Retourne le mot inversé
+}
+// On appelle la fonction pour inverser le mot "JavaScript"
+console.log(inverserMotRecursifBoucle("JavaScript")); // Affiche "tpircSavaJ"
